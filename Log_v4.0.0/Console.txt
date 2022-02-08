@@ -1,0 +1,30 @@
+Started InternetExplorerDriver server (32-bit)
+4.0.0.0
+Listening on port 3382
+Log level is set to TRACE
+Log file is set to xxxxx\ReproEdgeIEModeParallel\bin\Debug\netcoreapp3.1\IE-A.log
+Only local connections are allowed
+GitHub: Where the world builds software ・ GitHub
+Started InternetExplorerDriver server (32-bit)
+4.0.0.0
+Listening on port 3394
+Log level is set to TRACE
+Log file is set to xxxxx\ReproEdgeIEModeParallel\bin\Debug\netcoreapp3.1\IE-B.log
+Only local connections are allowed
+GitHub: Where the world builds software ・ GitHub
+Bing
+Started InternetExplorerDriver server (32-bit)
+4.0.0.0
+Listening on port 3408
+Log level is set to TRACE
+Log file is set to xxxxx\ReproEdgeIEModeParallel\bin\Debug\netcoreapp3.1\EdgeIE-A.log
+Only local connections are allowed
+GitHub: Where the world builds software ・ GitHub
+Started InternetExplorerDriver server (32-bit)
+4.0.0.0
+Listening on port 3429
+Log level is set to TRACE
+Log file is set to xxxxx\ReproEdgeIEModeParallel\bin\Debug\netcoreapp3.1\EdgeIE-B.log
+Only local connections are allowed
+Bing
+Bing

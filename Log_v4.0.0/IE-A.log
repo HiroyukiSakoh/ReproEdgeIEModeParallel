@@ -1,0 +1,588 @@
+I 2022-02-09 00:35:28:740 C:\Projects\selenium\cpp\webdriver-server\server.cc(88) Starting WebDriver server on port: '3382' on host: ''
+T 2022-02-09 00:35:28:741 C:\Projects\selenium\cpp\webdriver-server\server.cc(738) Entering Server::PopulateCommandRepository
+T 2022-02-09 00:35:28:741 C:\Projects\selenium\cpp\iedriver\IEServer.cpp(32) Entering IEServer::IEServer
+I 2022-02-09 00:35:28:741 C:\Projects\selenium\cpp\iedriver\IEServer.cpp(33) Driver version: 4.0.0.0 (32-bit)
+T 2022-02-09 00:35:28:741 C:\Projects\selenium\cpp\webdriver-server\server.cc(180) Entering Server::Start
+T 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /status HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: GET /status {}
+T 2022-02-09 00:35:28:779 C:\Projects\selenium\cpp\iedriver\IEServer.cpp(51) Entering IEServer::GetStatus
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : 
+	{
+		"build" : 
+		{
+			"version" : "4.0.0.0 (32-bit)"
+		},
+		"message" : "Ready to create session",
+		"os" : 
+		{
+			"arch" : "x64",
+			"name" : "windows",
+			"version" : "10.0.19041.1151 (WinBuild.160101.0800)"
+		},
+		"ready" : true
+	}
+}
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:28:780 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(298) Entering Server::ReadRequestBody
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /session HTTP verb: POST
+body: {"capabilities":{"firstMatch":[{"browserName":"internet explorer","platformName":"windows","se:ieOptions":{"nativeEvents":true,"enablePersistentHover":true}}]}}
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: POST /session {"capabilities":{"firstMatch":[{"browserName":"internet explorer","platformName":"windows","se:ieOptions":{"nativeEvents":true,"enablePersistentHover":true}}]}}
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\iedriver\IEServer.cpp(42) Entering IEServer::InitializeSession
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\iedriver\IESession.cpp(45) Entering IESession::Initialize
+D 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\iedriver\IESession.cpp(60) Mutex acquired for session initalization
+T 2022-02-09 00:35:29:077 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(902) Entering IECommandExecutor::ThreadProc
+T 2022-02-09 00:35:29:079 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(75) Entering IECommandExecutor::OnCreate
+T 2022-02-09 00:35:29:079 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1687) Entering IECommandExecutor::PopulateElementFinderMethods
+T 2022-02-09 00:35:29:079 C:\Projects\selenium\cpp\iedriver\InputManager.cpp(56) Entering InputManager::InputManager
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1230) Entering BrowserFactory::GetExecutableLocation
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\RegistryUtilities.cpp(49) Attempting to get registry value  from HKEY_LOCAL_MACHINE\SOFTWARE\Classes\InternetExplorer.Application\CLSID
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\RegistryUtilities.cpp(133) Retrieved value {0002DF01-0000-0000-C000-000000000046}
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\RegistryUtilities.cpp(49) Attempting to get registry value  from HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0002DF01-0000-0000-C000-000000000046}\LocalServer32
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\RegistryUtilities.cpp(133) Retrieved value "C:\Program Files\Internet Explorer\IEXPLORE.EXE"
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1279) Entering BrowserFactory::GetIEVersion
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\CommandHandlerRepository.cpp(110) Entering CommandHandlerRepository::PopulateCommandHandlers
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\IESession.cpp(106) Created thread for command executor returns HWND: '000C077C'
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\IESession.cpp(110) Session id is retrived from command executor window: '74800e5a-d67c-40b1-b821-ea9709875951'
+D 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\IESession.cpp(116) Releasing session initialization mutex
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\IESession.cpp(198) Entering IESession::ExecuteCommand
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(156) Entering IECommandExecutor::OnSetCommand
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "newSession", "locator" : { }, "parameters" : {"capabilities":{"firstMatch":[{"browserName":"internet explorer","platformName":"windows","se:ieOptions":{"nativeEvents":true,"enablePersistentHover":true}}]}} }
+T 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:29:080 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "newSession", "locator" : { }, "parameters" : {"capabilities":{"firstMatch":[{"browserName":"internet explorer","platformName":"windows","se:ieOptions":{"nativeEvents":true,"enablePersistentHover":true}}]}} }
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(178) Entering IECommandExecutor::OnExecCommand
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\IESession.cpp(226) Beginning wait for response length to be not zero
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(974) Entering IECommandExecutor::DispatchCommand
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1039) Executing command: newSession
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(48) Found W3C capabilities structure
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(183) Entering NewSessionCommandHandler::ValidateArguments
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(199) Validating alwaysMatch capability set
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(672) Entering NewSessionCommandHandler::ValidateCapabilities
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(673) Validating capabilities object
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(220) Validating firstMatch capability set with index 0
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(672) Entering NewSessionCommandHandler::ValidateCapabilities
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(673) Validating capabilities object
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(722) Found browserName capability. Validating value type is string.
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(751) Found platformName capability. Validating value type is string.
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(989) Found se:ieOptions capability. Validating value type is object.
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(648) Entering NewSessionCommandHandler::MergeCapabilities
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(274) Entering NewSessionCommandHandler::ProcessCapabilities
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(589) Entering NewSessionCommandHandler::MatchCapabilities
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(279) Processing matched capability set with index 0
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability unhandledPromptBehavior
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability pageLoadStrategy
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(167) Entering NewSessionCommandHandler::GetPageLoadStrategyValue
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability strictFileInteractability
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability timeouts
+W 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(105) Invalid capability setting: timeouts is type null instead of object. Default value will be used: null
+
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(345) Entering NewSessionCommandHandler::SetTimeoutSettings
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(364) Entering NewSessionCommandHandler::SetBrowserFactorySettings
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ignoreProtectedModeSettings
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ignoreZoomSetting
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability browserAttachTimeout
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability initialBrowserUrl
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.forceCreateProcessApi
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.forceShellWindowsApi
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.browserCommandLineSwitches
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.ensureCleanSession
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.edgechromium
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.edgepath
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(118) Entering BrowserFactory::Initialize
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(128) path before was 
+
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(130) path after was 0128E4E0
+
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(485) Entering NewSessionCommandHandler::SetInputSettings
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability nativeEvents
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability elementScrollBehavior
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability requireWindowFocus
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability ie.fileUploadDialogTimeout
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(101) Entering NewSessionCommandHandler::GetCapability for capability enablePersistentHover
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\InputManager.cpp(82) Entering InputManager::Initialize
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\CommandHandlers\NewSessionCommandHandler.cpp(532) Entering NewSessionCommandHandler::CreateReturnedCapabilities
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1561) Entering IECommandExecutor::CreateNewBrowser
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(150) Entering BrowserFactory::LaunchBrowserProcess
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(154) Ignoring Protected Mode Settings: 0
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(157) Checking validity of Protected Mode settings.
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1298) Entering BrowserFactory::ProtectedModeSettingsAreValid
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1301) Detected IE version: 11, Windows version supports Protected Mode: 1
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1375) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1392) Found Protected Mode setting value of 0 for zone 1
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1375) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1392) Found Protected Mode setting value of 0 for zone 2
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1375) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1392) Found Protected Mode setting value of 0 for zone 3
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1375) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1392) Found Protected Mode setting value of 0 for zone 4
+D 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(160) Has Valid Protected Mode Settings: 1
+T 2022-02-09 00:35:29:081 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(236) Entering BrowserFactory::IsIELaunchURLAvailable
+T 2022-02-09 00:35:29:086 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(138) Entering BrowserFactory::ClearCache
+T 2022-02-09 00:35:29:086 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(257) Entering BrowserFactory::LaunchBrowserUsingIELaunchURL
+D 2022-02-09 00:35:29:086 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(258) Starting IE using the IELaunchURL API
+D 2022-02-09 00:35:29:293 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(212) IE launched successfully with process ID 17424
+D 2022-02-09 00:35:29:293 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(218) Process with ID 17424 is executing iexplore.exe
+T 2022-02-09 00:35:29:293 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(477) Entering BrowserFactory::AttachToBrowser
+D 2022-02-09 00:35:29:293 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(487) Using Active Accessibility to find IWebBrowser2 interface
+T 2022-02-09 00:35:29:293 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(538) Entering BrowserFactory::AttachToBrowserUsingActiveAccessibility
+T 2022-02-09 00:35:29:443 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:29:443 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: / HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:29:443 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:29:546 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:29:546 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /favicon.ico HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:29:546 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:29:546 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:29:546 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: GET /favicon.ico {}
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\response.cc(94) Entering Response::SetErrorResponse
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : 
+	{
+		"error" : "unknown command",
+		"message" : "Command not found: GET /favicon.ico",
+		"stacktrace" : ""
+	}
+}
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:29:547 C:\Projects\selenium\cpp\webdriver-server\server.cc(603) Entering Server::SendHttpNotFound
+D 2022-02-09 00:35:29:552 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(1145) Looking for 17424
+D 2022-02-09 00:35:29:552 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(565) Found window handle 00100908 for window with class 'Internet Explorer_Server' belonging to process with id 17424
+T 2022-02-09 00:35:29:552 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(441) Entering BrowserFactory::GetDocumentFromWindowHandle
+D 2022-02-09 00:35:29:589 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(508) Ignoring zoom setting: 0
+T 2022-02-09 00:35:29:589 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(709) Entering BrowserFactory::GetBrowserZoomLevel
+T 2022-02-09 00:35:29:595 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(749) Entering BrowserFactory::GetZoomLevel
+D 2022-02-09 00:35:29:604 C:\Projects\selenium\cpp\iedriver\BrowserFactory.cpp(829) Browser zoom level is 100%
+I 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1584) Persistent hovering set to: 1
+T 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\ProxyManager.cpp(103) ProxyManager::SetProxySettings
+D 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\ProxyManager.cpp(119) Using existing system proxy settings.
+T 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(37) Entering DocumentHost::DocumentHost
+T 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\CookieManager.cpp(48) Entering CookieManager::Initialize
+T 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\Browser.cpp(38) Entering Browser::Browser
+T 2022-02-09 00:35:29:606 C:\Projects\selenium\cpp\iedriver\Browser.cpp(414) Entering Browser::AttachEvents
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1339) Entering IECommandExecutor::AddManagedBrowser
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1343) Setting current browser id to 5531ba4d-ce72-4808-82df-116a12f1d9ef
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(447) Entering DocumentHost::SetFocusToBrowser
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\Browser.cpp(559) Entering Browser::GetTopLevelWindowHandle
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+D 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1042) Command execution for newSession complete
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1107) Setting serialized response to {
+	"value" : 
+	{
+		"capabilities" : 
+		{
+			"acceptInsecureCerts" : false,
+			"browserName" : "internet explorer",
+			"browserVersion" : "11",
+			"pageLoadStrategy" : "normal",
+			"platformName" : "windows",
+			"proxy" : {},
+			"se:ieOptions" : 
+			{
+				"browserAttachTimeout" : 0,
+				"elementScrollBehavior" : 0,
+				"enablePersistentHover" : true,
+				"ie.browserCommandLineSwitches" : "",
+				"ie.edgechromium" : false,
+				"ie.edgepath" : "",
+				"ie.ensureCleanSession" : false,
+				"ie.fileUploadDialogTimeout" : 3000,
+				"ie.forceCreateProcessApi" : false,
+				"ignoreProtectedModeSettings" : false,
+				"ignoreZoomSetting" : false,
+				"initialBrowserUrl" : "http://localhost:3382/",
+				"nativeEvents" : true,
+				"requireWindowFocus" : false
+			},
+			"setWindowRect" : true,
+			"strictFileInteractability" : false,
+			"timeouts" : 
+			{
+				"implicit" : 0,
+				"pageLoad" : 300000,
+				"script" : 30000
+			},
+			"unhandledPromptBehavior" : "dismiss and notify"
+		},
+		"sessionId" : "74800e5a-d67c-40b1-b821-ea9709875951"
+	}
+}
+D 2022-02-09 00:35:29:608 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1108) Is waiting flag: 0
+T 2022-02-09 00:35:29:625 C:\Projects\selenium\cpp\iedriver\IESession.cpp(235) Found non-zero response length
+T 2022-02-09 00:35:29:625 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(201) Entering IECommandExecutor::OnGetResponse
+T 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(621) Entering IECommandExecutor::OnIsSessionValid
+T 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+D 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : 
+	{
+		"capabilities" : 
+		{
+			"acceptInsecureCerts" : false,
+			"browserName" : "internet explorer",
+			"browserVersion" : "11",
+			"pageLoadStrategy" : "normal",
+			"platformName" : "windows",
+			"proxy" : {},
+			"se:ieOptions" : 
+			{
+				"browserAttachTimeout" : 0,
+				"elementScrollBehavior" : 0,
+				"enablePersistentHover" : true,
+				"ie.browserCommandLineSwitches" : "",
+				"ie.edgechromium" : false,
+				"ie.edgepath" : "",
+				"ie.ensureCleanSession" : false,
+				"ie.fileUploadDialogTimeout" : 3000,
+				"ie.forceCreateProcessApi" : false,
+				"ignoreProtectedModeSettings" : false,
+				"ignoreZoomSetting" : false,
+				"initialBrowserUrl" : "http://localhost:3382/",
+				"nativeEvents" : true,
+				"requireWindowFocus" : false
+			},
+			"setWindowRect" : true,
+			"strictFileInteractability" : false,
+			"timeouts" : 
+			{
+				"implicit" : 0,
+				"pageLoad" : 300000,
+				"script" : 30000
+			},
+			"unhandledPromptBehavior" : "dismiss and notify"
+		},
+		"sessionId" : "74800e5a-d67c-40b1-b821-ea9709875951"
+	}
+}
+T 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:29:626 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(298) Entering Server::ReadRequestBody
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /session/74800e5a-d67c-40b1-b821-ea9709875951/url HTTP verb: POST
+body: {"url":"https://github.com/"}
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: POST /session/74800e5a-d67c-40b1-b821-ea9709875951/url {"url":"https://github.com/"}
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\server.cc(466) Entering Server::LookupSession
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IESession.cpp(198) Entering IESession::ExecuteCommand
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(156) Entering IECommandExecutor::OnSetCommand
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "get", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {"url":"https://github.com/"} }
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "get", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {"url":"https://github.com/"} }
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(178) Entering IECommandExecutor::OnExecCommand
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IESession.cpp(226) Beginning wait for response length to be not zero
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(974) Entering IECommandExecutor::DispatchCommand
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:647 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(992) Checking for alert before executing get command
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1190) Entering IECommandExecutor::IsAlertActive
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1207) No alert handle is found
+D 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1039) Executing command: get
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(393) Entering Browser::IsCrossZoneUrl
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(425) Entering DocumentHost::IsProtectedMode
+T 2022-02-09 00:35:29:648 C:\Projects\selenium\cpp\iedriver\Browser.cpp(809) Entering Browser::GetBrowserWindowHandle
+T 2022-02-09 00:35:29:649 C:\Projects\selenium\cpp\iedriver\HookProcessor.cpp(106) Entering HookProcessor::Initialize
+T 2022-02-09 00:35:29:649 C:\Projects\selenium\cpp\iedriver\HookProcessor.cpp(165) Entering HookProcessor::InstallWindowsHook
+T 2022-02-09 00:35:29:651 C:\Projects\selenium\cpp\iedriver\HookProcessor.cpp(242) Entering HookProcessor::Dispose
+T 2022-02-09 00:35:29:651 C:\Projects\selenium\cpp\iedriver\HookProcessor.cpp(195) Entering HookProcessor::UninstallWindowsHook
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\Browser.cpp(456) Entring Browser::NavigateToUrl
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(149) Entering DocumentHost::SetFocusedFrameByElement
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+D 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1042) Command execution for get complete
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:29:661 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1082) Command handler requested wait. This will cause a minimal wait of at least 50 milliseconds.
+D 2022-02-09 00:35:29:662 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1141) Creating wait thread with deferred response of `{
+	"value" : null
+}`
+T 2022-02-09 00:35:29:662 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(853) Entering IECommandExecutor::WaitThreadProc
+T 2022-02-09 00:35:29:663 C:\Projects\selenium\cpp\iedriver\Browser.cpp(57) Entering Browser::BeforeNavigate2
+D 2022-02-09 00:35:29:663 C:\Projects\selenium\cpp\iedriver\Browser.cpp(60) BeforeNavigate2: Url: https://github.com/, TargetFrame: 00000000
+T 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(218) Entering IECommandExecutor::OnWait
+D 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(224) Starting wait cycle.
+T 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(248) Beginning wait.
+T 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\Browser.cpp(584) Entering Browser::Wait
+D 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\Browser.cpp(598) Navigate Events Completed.
+T 2022-02-09 00:35:29:722 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:29:723 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:29:723 C:\Projects\selenium\cpp\iedriver\Browser.cpp(614) Browser busy property is true.
+D 2022-02-09 00:35:29:723 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(257) Wait not complete. Scheduling another wait cycle.
+D 2022-02-09 00:35:29:723 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1141) Creating wait thread with deferred response of `{
+	"value" : null
+}`
+T 2022-02-09 00:35:29:723 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(853) Entering IECommandExecutor::WaitThreadProc
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(218) Entering IECommandExecutor::OnWait
+D 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(224) Starting wait cycle.
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(248) Beginning wait.
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\Browser.cpp(584) Entering Browser::Wait
+D 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\Browser.cpp(598) Navigate Events Completed.
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:29:782 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:29:783 C:\Projects\selenium\cpp\iedriver\Browser.cpp(614) Browser busy property is true.
+D 2022-02-09 00:35:29:783 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(257) Wait not complete. Scheduling another wait cycle.
+D 2022-02-09 00:35:29:783 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1141) Creating wait thread with deferred response of `{
+	"value" : null
+}`
+T 2022-02-09 00:35:29:783 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(853) Entering IECommandExecutor::WaitThreadProc
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(218) Entering IECommandExecutor::OnWait
+D 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(224) Starting wait cycle.
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(248) Beginning wait.
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\Browser.cpp(584) Entering Browser::Wait
+D 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\Browser.cpp(598) Navigate Events Completed.
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:29:842 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:29:848 C:\Projects\selenium\cpp\iedriver\Browser.cpp(614) Browser busy property is true.
+D 2022-02-09 00:35:29:848 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(257) Wait not complete. Scheduling another wait cycle.
+D 2022-02-09 00:35:29:848 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1141) Creating wait thread with deferred response of `{
+	"value" : null
+}`
+T 2022-02-09 00:35:29:848 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(853) Entering IECommandExecutor::WaitThreadProc
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(218) Entering IECommandExecutor::OnWait
+D 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(224) Starting wait cycle.
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(248) Beginning wait.
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\Browser.cpp(584) Entering Browser::Wait
+D 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\Browser.cpp(598) Navigate Events Completed.
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:29:899 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:30:041 C:\Projects\selenium\cpp\iedriver\Browser.cpp(614) Browser busy property is true.
+D 2022-02-09 00:35:30:041 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(257) Wait not complete. Scheduling another wait cycle.
+D 2022-02-09 00:35:30:041 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1141) Creating wait thread with deferred response of `{
+	"value" : null
+}`
+T 2022-02-09 00:35:30:041 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(853) Entering IECommandExecutor::WaitThreadProc
+T 2022-02-09 00:35:30:049 C:\Projects\selenium\cpp\iedriver\Browser.cpp(188) Entering Browser::DocumentComplete
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(218) Entering IECommandExecutor::OnWait
+D 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(224) Starting wait cycle.
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(248) Beginning wait.
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\Browser.cpp(584) Entering Browser::Wait
+D 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\Browser.cpp(598) Navigate Events Completed.
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:30:096 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:30:118 C:\Projects\selenium\cpp\iedriver\Browser.cpp(658) Waiting for document to complete...
+T 2022-02-09 00:35:30:118 C:\Projects\selenium\cpp\iedriver\Browser.cpp(672) Entering Browser::IsDocumentNavigating
+D 2022-02-09 00:35:30:127 C:\Projects\selenium\cpp\iedriver\Browser.cpp(663) Not in navigating state
+D 2022-02-09 00:35:30:127 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(265) Wait complete. Setting serialized response to deferred value {
+	"value" : null
+}
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\iedriver\IESession.cpp(235) Found non-zero response length
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(201) Entering IECommandExecutor::OnGetResponse
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(621) Entering IECommandExecutor::OnIsSessionValid
+D 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : null
+}
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:30:146 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /session/74800e5a-d67c-40b1-b821-ea9709875951/title HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: GET /session/74800e5a-d67c-40b1-b821-ea9709875951/title {}
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\server.cc(466) Entering Server::LookupSession
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IESession.cpp(198) Entering IESession::ExecuteCommand
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(156) Entering IECommandExecutor::OnSetCommand
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "getTitle", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "getTitle", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(178) Entering IECommandExecutor::OnExecCommand
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(974) Entering IECommandExecutor::DispatchCommand
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IESession.cpp(226) Beginning wait for response length to be not zero
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(992) Checking for alert before executing getTitle command
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1190) Entering IECommandExecutor::IsAlertActive
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1207) No alert handle is found
+D 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1039) Executing command: getTitle
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:30:149 C:\Projects\selenium\cpp\iedriver\Browser.cpp(271) Entering Browser::GetTitle
+T 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+D 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1042) Command execution for getTitle complete
+T 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1107) Setting serialized response to {
+	"value" : "GitHub: Where the world builds software \u00b7 GitHub"
+}
+D 2022-02-09 00:35:30:152 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1108) Is waiting flag: 0
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\iedriver\IESession.cpp(235) Found non-zero response length
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(201) Entering IECommandExecutor::OnGetResponse
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(621) Entering IECommandExecutor::OnIsSessionValid
+D 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : "GitHub: Where the world builds software \u00b7 GitHub"
+}
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:30:166 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /session/74800e5a-d67c-40b1-b821-ea9709875951/title HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: GET /session/74800e5a-d67c-40b1-b821-ea9709875951/title {}
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\server.cc(466) Entering Server::LookupSession
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IESession.cpp(198) Entering IESession::ExecuteCommand
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(156) Entering IECommandExecutor::OnSetCommand
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "getTitle", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "getTitle", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IESession.cpp(226) Beginning wait for response length to be not zero
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(178) Entering IECommandExecutor::OnExecCommand
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(974) Entering IECommandExecutor::DispatchCommand
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(992) Checking for alert before executing getTitle command
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1190) Entering IECommandExecutor::IsAlertActive
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1207) No alert handle is found
+D 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1039) Executing command: getTitle
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:31:589 C:\Projects\selenium\cpp\iedriver\Browser.cpp(271) Entering Browser::GetTitle
+T 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+D 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1042) Command execution for getTitle complete
+T 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1107) Setting serialized response to {
+	"value" : "GitHub: Where the world builds software \u00b7 GitHub"
+}
+D 2022-02-09 00:35:31:592 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1108) Is waiting flag: 0
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\iedriver\IESession.cpp(235) Found non-zero response length
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(201) Entering IECommandExecutor::OnGetResponse
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(621) Entering IECommandExecutor::OnIsSessionValid
+D 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : "GitHub: Where the world builds software \u00b7 GitHub"
+}
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:31:601 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /session/74800e5a-d67c-40b1-b821-ea9709875951 HTTP verb: DELETE
+body: {}
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(334) Entering Server::DispatchCommand
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(687) Entering Server::LookupCommand
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(343) Command: DELETE /session/74800e5a-d67c-40b1-b821-ea9709875951 {}
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\server.cc(466) Entering Server::LookupSession
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IESession.cpp(198) Entering IESession::ExecuteCommand
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(156) Entering IECommandExecutor::OnSetCommand
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "quit", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "quit", "locator" : { "sessionid" : "74800e5a-d67c-40b1-b821-ea9709875951" }, "parameters" : {} }
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(178) Entering IECommandExecutor::OnExecCommand
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(974) Entering IECommandExecutor::DispatchCommand
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(992) Checking for alert before executing quit command
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1190) Entering IECommandExecutor::IsAlertActive
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1207) No alert handle is found
+D 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1039) Executing command: quit
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1325) Entering IECommandExecutor::GetManagedBrowserHandles
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(571) Entering Browser::IsValidWindow
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(868) Entering Browser::GetActiveDialogWindowHandle
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(315) Entering Browser::GetContentWindowHandle
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\Browser.cpp(428) Entering Browser::Close
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(149) Entering DocumentHost::SetFocusedFrameByElement
+T 2022-02-09 00:35:31:619 C:\Projects\selenium\cpp\iedriver\IESession.cpp(226) Beginning wait for response length to be not zero
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\webdriver-server\response.cc(81) Entering Response::SetSuccessResponse
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\webdriver-server\response.cc(87) Entering Response::SetResponse
+D 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1042) Command execution for quit complete
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1295) Entering IECommandExecutor::GetCurrentBrowser
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1301) Entering IECommandExecutor::GetManagedBrowser
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1304) Current command executor is not valid
+T 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\webdriver-server\response.cc(60) Entering Response::Serialize
+D 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1107) Setting serialized response to {
+	"value" : null
+}
+D 2022-02-09 00:35:31:620 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(1108) Is waiting flag: 0
+T 2022-02-09 00:35:31:621 C:\Projects\selenium\cpp\iedriver\Browser.cpp(64) Entering Browser::OnQuit
+T 2022-02-09 00:35:31:621 C:\Projects\selenium\cpp\iedriver\DocumentHost.cpp(283) Entering DocumentHost::PostQuitMessage
+T 2022-02-09 00:35:31:621 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(517) Entering IECommandExecutor::OnBrowserQuit
+T 2022-02-09 00:35:31:621 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(522) Removing browser with ID 5531ba4d-ce72-4808-82df-116a12f1d9ef
+T 2022-02-09 00:35:31:621 C:\Projects\selenium\cpp\iedriver\Browser.cpp(421) Entering Browser::DetachEvents
+T 2022-02-09 00:35:31:634 C:\Projects\selenium\cpp\iedriver\IESession.cpp(235) Found non-zero response length
+T 2022-02-09 00:35:31:634 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(201) Entering IECommandExecutor::OnGetResponse
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(621) Entering IECommandExecutor::OnIsSessionValid
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\webdriver-server\server.cc(285) Entering Server::ShutDownSession
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(126) Entering IESession::ShutDown
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(180) Entering IESession::WaitForCommandExecutorExit
+D 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(157) Executor shutdown successful!
+D 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(165) Posting thread shutdown message
+D 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(168) Starting wait for thread completion
+D 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\iedriver\IESession.cpp(171) Waiting for thread to end returned 4294967295
+D 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\webdriver-server\server.cc(426) Response: {
+	"value" : null
+}
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\webdriver-server\server.cc(479) Entering Server::SendResponseToClient
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2022-02-09 00:35:31:635 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\webdriver-server\server.cc(234) Entering Server::ProcessRequest
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\webdriver-server\server.cc(243) Process request with: URI: /shutdown HTTP verb: GET
+body: {}
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\webdriver-server\server.cc(540) Entering Server::SendHttpOk
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\iedriver\IEServer.cpp(88) Entering IEServer::ShutDown
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\iedriver\WebDriver.cpp(54) Entering StopServer
+T 2022-02-09 00:35:31:638 C:\Projects\selenium\cpp\webdriver-server\server.cc(225) Entering Server::Stop
+T 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(531) Successfully removed browser with ID 5531ba4d-ce72-4808-82df-116a12f1d9ef
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(952) Shutdown message received
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(131) Entering IECommandExecutor::OnDestroy
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(133) Clearing managed element cache
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(136) Closing command handler repository
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(138) Closing element finder
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(140) Closing input manager
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(142) Closing proxy manager
+T 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\ProxyManager.cpp(190) ProxyManager::RestoreProxySettings
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(144) Closing browser factory
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(146) Posting quit message
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(148) Leaving IECommandExecutor::OnDestroy
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(954) Returned from DestroyWindow()
+D 2022-02-09 00:35:31:668 C:\Projects\selenium\cpp\iedriver\IECommandExecutor.cpp(967) Exited IECommandExecutor thread message loop
